@@ -1874,6 +1874,16 @@ LEFT JOIN blood_requests br ON br.id = it.request_id
 ORDER BY it.created_at DESC
 LIMIT 8`,
       },
+      schema_metadata: {
+        title: 'Database Constraints, Indexes & pgvector Extension Audit',
+        concept: 'System Catalog Proof of CHECK/FK/UNIQUE Constraints & B-Tree Indexes',
+        query: `SELECT tc.table_name, tc.constraint_type, tc.constraint_name
+FROM information_schema.table_constraints tc
+WHERE tc.table_schema = 'public'
+  AND tc.constraint_type IN ('PRIMARY KEY', 'FOREIGN KEY', 'UNIQUE', 'CHECK')
+ORDER BY tc.table_name, tc.constraint_type
+LIMIT 15`,
+      },
     };
 
     const selected = demos[String(demoKey)];

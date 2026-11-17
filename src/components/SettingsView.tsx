@@ -415,6 +415,7 @@ export function SettingsView() {
               { key: 'subquery_priority', label: 'Scalar Subquery + ORDER BY' },
               { key: 'pgvector_similarity', label: 'pgvector Cosine Similarity (<=>)' },
               { key: 'audit_trail_join', label: 'Transaction Ledger Multi-JOIN' },
+              { key: 'schema_metadata', label: 'Constraints & Keys Catalog' },
             ].map((demo) => (
               <button
                 key={demo.key}
