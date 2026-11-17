@@ -1,0 +1,6 @@
+{
+  "name": "BloodLink",
+  "description": "Multi-Bank Blood Inventory, Priority-Based Donor Matching & Semantic Request Understanding System",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
