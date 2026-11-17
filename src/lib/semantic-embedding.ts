@@ -1,4 +1,4 @@
-import { BloodGroup, isValidBloodGroup } from './blood-compatibility.ts';
+import { type BloodGroup, isValidBloodGroup } from './blood-compatibility.ts';
 
 export const EMBEDDING_DIMENSIONS = 128;
 

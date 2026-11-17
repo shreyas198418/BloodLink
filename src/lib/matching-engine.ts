@@ -1,9 +1,9 @@
 import {
-  BloodGroup,
+  type BloodGroup,
   calculateDistanceKm,
   canDonorDonateToRecipient,
   DEFAULT_ELIGIBILITY_POLICY,
-  EligibilityPolicy,
+  type EligibilityPolicy,
   evaluateDonorScreeningEligibility,
   isValidBloodGroup,
 } from './blood-compatibility.ts';

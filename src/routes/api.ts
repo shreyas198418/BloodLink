@@ -17,12 +17,12 @@ import {
 } from '../db/schema.ts';
 import { ensureSeeded } from '../db/seed.ts';
 import {
-  AuthRequest,
+  type AuthRequest,
   requireAuth,
   requireRole,
   SESSION_COOKIE_NAME,
   signSessionToken,
-  UserRole,
+  type UserRole,
 } from '../middleware/auth.ts';
 import {
   BLOOD_GROUPS,
@@ -31,7 +31,7 @@ import {
   isValidBloodGroup,
   parseRhFactor,
 } from '../lib/blood-compatibility.ts';
-import { calculatePriorityScore, RequestPriority } from '../lib/priority-scoring.ts';
+import { calculatePriorityScore, type RequestPriority } from '../lib/priority-scoring.ts';
 import { isBatchExpired, matchDonorsAndInventory } from '../lib/matching-engine.ts';
 import {
   explainSemanticRetrieval,

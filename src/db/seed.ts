@@ -14,7 +14,7 @@ import {
   systemSettings,
   users,
 } from './schema.ts';
-import { parseRhFactor, BloodGroup } from '../lib/blood-compatibility.ts';
+import { parseRhFactor, type BloodGroup } from '../lib/blood-compatibility.ts';
 import { calculatePriorityScore } from '../lib/priority-scoring.ts';
 import {
   extractRequestContext,
